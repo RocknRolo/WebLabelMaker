@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Label Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="addresses.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body onload="populateSelectAddr()">
+    <div class="white_border" id="to">
+        <div id="to_header">
+            <h1>To:</h1>
+            <label>(optional)</label>
+        </div>
+        <input type="text" id="to_textarea" maxlength="90" autofocus></input>
+    </div>
+
+    <div class="white_border" id="address">
+        <h1>Address:</h1>
+        <select id="select_address" onchange="updateAddrText()">
+            <option selected disabled hidden>Select an address...</option>
+        </select>
+
+        <textarea id="address_textarea" readOnly></textarea>
+        
+        <div id="custom_addr">
+            <input type="checkbox" id="custom_addr_cb" onclick="customAddress()">
+            <label for="custom_addr_cb">Custom address...</label>
+        </div>
+    </div>
+
+    <div id="tos_and_controls">
+        <div class="white_border" id="type_of_shipment">
+            <h1>Type of shipment:</h1>
+            <div id="shipment_types">
+                <div id="normal_rb_lb">
+                    <input type="radio" name="tos" checked>
+                    <label>Normal</label>
+                </div>
+                <div>
+                    <input type="radio" name="tos" id="express">
+                    <label>Express</label>
+                </div>
+            </div>
+        </div>
+        <div id="controls">
+            <button id="clear_btn" onclick="window.location.reload();">Clear</button>
+            <button id="save_btn">Save</a>
+            <button id="print_btn">Print</button>
+            <button id="batt_btn">Print form</button>
+        </div>
+    </div>
+    <canvas id="canvas" hidden></canvas>
+</body>
+</html>

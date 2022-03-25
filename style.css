@@ -1,0 +1,130 @@
+body {
+    background-color: #BBB;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-row-gap: 30px;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 2.2rem;
+    padding: 10px;
+    padding-bottom: 0;
+    margin: 0;
+
+}
+
+.white_border {
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+/*
+    To div
+*/
+#to {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#to label {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+#to_header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#to_textarea {
+    margin: 10px;
+    resize: none;
+    font-size: 4rem;
+    font-family: helvetica;
+    text-align: center;
+}
+
+/*
+    Address div
+*/
+#address {
+    grid-column: 2;
+    display: grid;    
+    grid-column-gap: 10px;
+}
+
+#select_address {
+    height: 24px;
+    width: 50%;
+    margin: 10px;
+}
+
+#address_textarea {
+    height: 245px;
+    font-family: sans-serif;
+    font-size: 2.6rem;
+    margin: 10px;
+    resize: none;
+    overflow: hidden;
+}
+
+#custom_addr {
+    grid-row: 3;
+    margin: 10px;
+}
+
+/*
+    Type of shipment and controls div
+*/
+#tos_and_controls {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#type_of_shipment {
+    padding: 0 0 30px 0;
+}
+
+#type_of_shipment h1 {
+    margin-bottom: 10px;
+}
+
+#shipment_types {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+
+/*
+    Controls div
+*/
+#controls {
+    grid-column: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#controls button {
+    font-size: 1.5rem;
+    padding: auto;
+    margin: auto;
+    padding: 10px;
+}
+
+/*
+    Canvas
+*/
+
+canvas {
+    grid-column: 2;
+    grid-row: 4;
+    margin: 0;
+    padding: 0;
+}
