@@ -11,7 +11,20 @@ h1 {
     padding: 10px;
     padding-bottom: 0;
     margin: 0;
+}
 
+a {
+    display: flex;
+    justify-content: center;
+    color: gray;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: yellow;
 }
 
 .white_border {
